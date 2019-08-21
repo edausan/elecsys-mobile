@@ -11,12 +11,13 @@ import Contact from './contact/Contact'
 import Capabilities from './capabilities/Capabilities'
 import QualitySystem from './qualitySystem/QualitySystem'
 import Downloads from './downloads/Downloads'
+import GotoTop from './layout/GotoTop'
 
 
 export default class extends Component {
     state = {
         imgCreated: false,
-        something: 'hello'
+        something: 'hello',
     }
 
     render() {
@@ -29,7 +30,7 @@ export default class extends Component {
                             path="/"
                             render={() => <Home something={this.state.something} />} />
                         <Route
-                            path="/about"
+                            path="/about_us"
                             component={() => <About />} />
                         <Route
                             path="/capabilities"
@@ -38,15 +39,19 @@ export default class extends Component {
                             path="/quality_system"
                             component={() => <QualitySystem />} />
                         <Route
-                            path="/contact"
+                            path="/contact_us"
                             component={() => <Contact />} />
                         <Route
                             path="/downloads"
                             component={() => <Downloads />} />
                     </Switch>
                     <Footer />
+                    <GotoTop />
                 </div>
             </BrowserRouter>
         )
     }
 }
+
+
+

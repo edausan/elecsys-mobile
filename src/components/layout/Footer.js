@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="blue-grey darken-3">
                 <div className="container">
                     <div className="row">
-                        <div className={`col s6 offset-s3 ${footerIcon}`}>
+                        <div className={`col s6 m6 l6 offset-s3 offset-m3 offset-l3 ${footerIcon}`}>
                             <img className="responsive-img" src={Logo} alt="" />
                         </div>
 

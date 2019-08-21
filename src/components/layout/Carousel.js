@@ -1,37 +1,30 @@
-import React from 'react'
+import React, { Component } from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import CarouselItem from './CarouselItem'
 
-const imageLoad = (e) => {
-    const carouselWrapper = document.querySelector('.carousel')
-    carouselWrapper.style.height = `${e.target.height}px`
-}
 
-const resize = () => {
-    window.addEventListener('resize', ImageResizing)
-}
+class Carousels extends Component {
+    arrGenerator = (limit) => {
+        let arr = []
 
-const ImageResizing = () => {
-    const carouselWrapper = document.querySelector('.carousel')
-    const carouselImg = document.querySelector('.carousel div img')
-    carouselWrapper.style.height = `${carouselImg.height}px`
-}
+        for (let x = 1; x <= limit; x++) {
+            arr.push(x)
+        }
+        return arr
+    }
 
-const Carousels = () => {
-    resize()
-    return (
-        <Carousel autoPlay={true} showStatus={false} infiniteLoop={true} showThumbs={false}>
-            <div>
-                <img onLoad={imageLoad} src="/static/images/carousel/Home no.1.jpg" alt="" />
-            </div>
-            <div>
-                <img src="/static/images/carousel/Home no.1.jpg" alt="" />
-            </div>
-            <div>
-                <img src="/static/images/carousel/Home no.1.jpg" alt="" />
-            </div>
-        </Carousel>
-    )
+    render() {
+        const arrGen = this.arrGenerator(10)
+        const carsItem = arrGen.map(arr => {
+            return <CarouselItem carouselLoaded={this.props.carouselLoaded} updateCarousel={this.props.updateCarousel} key={arr} src={arr} />
+        })
+        return (
+            <Carousel autoPlay={true} transitionTime={1000} interval={5000} showStatus={false} infiniteLoop={true} showThumbs={false}>
+                {carsItem}
+            </Carousel>
+        )
+    }
 }
 
 export default Carousels

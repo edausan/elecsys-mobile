@@ -1,0 +1,7 @@
+.nav-content {
+    height: 40px;
+}
+
+.sidenav-overlay {
+    z-index: 1003;
+}

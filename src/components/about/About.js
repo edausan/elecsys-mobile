@@ -6,13 +6,11 @@ import ImgWrapper from '../qualitySystem/ImgWrapper'
 
 
 const About = () => {
-    const jumbotron = <ImgWrapper src="http://www.elecsysmfg.com/wp-content/uploads/2018/10/about-us-banner-2.jpg" id="about-wrapper-1" />
+    const jumbotron = <ImgWrapper small="/static/images/about-us-banner-2-min.jpg" src="http://www.elecsysmfg.com/wp-content/uploads/2018/10/about-us-banner-2.jpg" id="about-wrapper-1" />
     return (
 
 
         <Wrapper title="About Us" jumbotron={jumbotron}>
-
-
 
             <p className={`flow-text ${paragraphs}`}>
                 Since its inception, Electronic Systems Manufacturing Corp. (Elecsys MFG) has developed an outstanding reputation for customer service, on time delivery and producing high quality products at very competitive prices. We are able to provide consignment and turnkey manufacturing solutions for through hole and surface mount assemblies, testing and right through to complete box builds.

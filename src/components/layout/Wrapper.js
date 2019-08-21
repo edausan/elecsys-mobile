@@ -1,13 +1,14 @@
-import React from 'react';
+import React from 'react'
 
 const Wrapper = (props) => {
     return (
         <section>
-            <section className="container">
-                <div className="row">
-                    <blockquote className="blue-text page-title"><h4>{props.title}</h4></blockquote>
-                </div>
-            </section>
+            {
+                props.title ?
+                    <section className="container">
+                        <blockquote className="blue-text page-title"><h4>{props.title}</h4></blockquote>
+                    </section> : null
+            }
 
             {
                 props.jumbotron ?
