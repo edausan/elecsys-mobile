@@ -16,7 +16,7 @@ export const VirtualTour = () => {
 		);
 	};
 
-	return <Wrapper title="Capabilities" jumbotron={loadVideo()} />;
+	return <Wrapper title="Virtual Tour" jumbotron={loadVideo()} />;
 };
 
 const vid = css({
