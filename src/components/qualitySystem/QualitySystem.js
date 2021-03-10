@@ -1,17 +1,27 @@
 import React from 'react';
-import Wrapper from '../layout/Wrapper'
-import ImgWrapper from './ImgWrapper'
+import Wrapper from '../layout/Wrapper';
+import ImgWrapper from './ImgWrapper';
 
 const QualitySystem = () => {
+	return (
+		<Wrapper title="Quality System">
+			<ImgWrapper
+				small="/static/images/placeholder.jpg"
+				src="http://www.elecsysmfg.com/wp-content/uploads/2021/03/Website-Certification-Registration.jpg"
+				id="wrapper-1"
+			/>
+			<ImgWrapper
+				small="/static/images/placeholder.jpg"
+				src="http://www.elecsysmfg.com/wp-content/uploads/2021/03/Website-Mission-Vision.jpg"
+				id="wrapper-2"
+			/>
+			<ImgWrapper
+				small="/static/images/placeholder.jpg"
+				src="http://www.elecsysmfg.com/wp-content/uploads/2021/03/Website-Quality-Policy.jpg"
+				id="wrapper-3"
+			/>
+		</Wrapper>
+	);
+};
 
-    return (
-
-        <Wrapper title="Quality System">
-            <ImgWrapper small="/static/images/quality system/1-min.png" src="http://www.elecsysmfg.com/wp-content/uploads/2018/10/1.png" id="wrapper-1" />
-            <ImgWrapper small="/static/images/quality system/2-min.png" src="http://www.elecsysmfg.com/wp-content/uploads/2018/10/2.png" id="wrapper-2" />
-            <ImgWrapper small="/static/images/quality system/3-min.png" src="http://www.elecsysmfg.com/wp-content/uploads/2018/10/3.png" id="wrapper-3" />
-        </Wrapper>
-    );
-}
-
-export default QualitySystem
+export default QualitySystem;
