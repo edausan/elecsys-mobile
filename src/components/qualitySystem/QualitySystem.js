@@ -7,6 +7,11 @@ const QualitySystem = () => {
 		<Wrapper title="Quality System">
 			<ImgWrapper
 				small="/static/images/placeholder.jpg"
+				src="https://www.elecsysmfg.com/wp-content/uploads/2021/07/Website-Certification-Registration-IATF.png"
+				id="wrapper-4"
+			/>
+			<ImgWrapper
+				small="/static/images/placeholder.jpg"
 				src="http://www.elecsysmfg.com/wp-content/uploads/2021/03/Website-Certification-Registration.jpg"
 				id="wrapper-1"
 			/>
@@ -19,11 +24,6 @@ const QualitySystem = () => {
 				small="/static/images/placeholder.jpg"
 				src="http://www.elecsysmfg.com/wp-content/uploads/2021/03/Website-Quality-Policy.jpg"
 				id="wrapper-3"
-			/>
-			<ImgWrapper
-				small="/static/images/placeholder.jpg"
-				src="https://www.elecsysmfg.com/wp-content/uploads/2021/07/Website-Certification-Registration-IATF.png"
-				id="wrapper-4"
 			/>
 		</Wrapper>
 	);
