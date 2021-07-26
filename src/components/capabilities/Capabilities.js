@@ -13,7 +13,7 @@ class Capabilities extends Component {
 	}
 
 	loadVideo = () => {
-		const src = 'http://www.elecsysmfg.com/wp-content/uploads/2019/01/ELECSYS%20Capabilities.mp4';
+		const src = 'http://www.elecsysmfg.com/wp-content/uploads/2021/03/ELECSYS-Capabilities.mp4';
 		const videoWrapper = (
 			<div className={`col s12 ${capWrapper}`}>
 				<video id="video" className={vid} style={{ width: '100%' }} autoPlay controls>

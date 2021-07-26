@@ -4,14 +4,23 @@ import Wrapper from '../layout/Wrapper';
 
 export const VirtualTour = () => {
 	const loadVideo = () => {
-		const src = 'http://www.elecsysmfg.com/wp-content/uploads/2021/03/Virtual_Tour.mp4';
+		const src = 'https://www.youtube.com/embed/VR_xOCBF1uc';
 
 		return (
 			<div className={`col s12 ${capWrapper}`}>
-				<video id="video" className={vid} style={{ width: '100%' }} autoPlay controls>
+				<iframe
+					// width="1268"
+					// height="713"
+					src="https://www.youtube.com/embed/VR_xOCBF1uc"
+					frameBorder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowFullScreen
+					className={vid}
+				></iframe>
+				{/* <video id="video" className={vid} style={{ width: '100%' }} autoPlay controls>
 					<source src={src} type="video/mp4" />
 					Your browser does not support the video tag.
-				</video>
+				</video> */}
 			</div>
 		);
 	};
@@ -21,6 +30,7 @@ export const VirtualTour = () => {
 
 const vid = css({
 	width: '100%',
+	minHeight: 188,
 });
 
 const placeHolderShimmer = css.keyframes({
